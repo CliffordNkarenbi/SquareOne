@@ -14,9 +14,7 @@ export function TabBar({ state, descriptors, navigation }: BottomTabBarProps) {
 
   const iconMap: Record<string, (props: any) => ReactElement> = { 
     explore: (props: any) => < Explore width={24} height={24} {...props} />,
-    
     bible: (props: any) => < Bible width={24} height={24} {...props} />,
-    
     notifications: (props: any) => < Notifications width={24} height={24} {...props} />,
     index: (props: any) => < Home width={24} height={24} {...props} />,
     profile: (props: any) => < Profile width={24} height={24} {...props} />, 
@@ -48,7 +46,7 @@ export function TabBar({ state, descriptors, navigation }: BottomTabBarProps) {
       position: 'absolute',
       height: 39,
       width: tabBarWidth,
-      bottom: 15,
+      bottom: 10,
       flexDirection: 'row',
       justifyContent: 'space-between',
       alignItems: 'center',
@@ -56,10 +54,6 @@ export function TabBar({ state, descriptors, navigation }: BottomTabBarProps) {
       alignSelf: 'center',
       paddingHorizontal: paddingHorizontal,
       borderRadius: 60,
-      shadowColor: themeColors.primary,
-      shadowOffset: { width: 0, height: 0  },
-      shadowRadius: 4,
-      shadowOpacity: 0.1,
       elevation: 2,
     },
     tabBarItem: {

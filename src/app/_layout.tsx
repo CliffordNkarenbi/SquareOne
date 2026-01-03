@@ -1,6 +1,9 @@
+// Ensure native modules initialize early
 import { AppDarkTheme, AppLightTheme } from '@/theme';
 import { Slot } from 'expo-router';
 import { useColorScheme } from 'react-native';
+import 'react-native-gesture-handler';
+import 'react-native-reanimated';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import "../../global.css";
 
