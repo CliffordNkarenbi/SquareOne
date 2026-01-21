@@ -2,28 +2,13 @@
 
 SquareOne is a community-driven Christian mobile app designed to help believers connect, grow, and engage with their faith in everyday life. It allows users to discover churches and Christian communities in their country/town/city, or any other group of their choice, join discussions, ask questions, and share insights in a safe, faith-centred space. The app also includes built-in spiritual tools, such as a Bible with various translations, a store where you can buy or sell items like Bibles, incense, rosaries, apparel, and more, alongside curated Christian resources and products. By blending community, learning, and modern mobile experiences, SquareOne aims to bring faith, fellowship, and purpose together in one place.
 
-## Get started
+## Technologies
 
-1. Install dependencies
+-Expo
+-day.js
+-react-native-svg
 
-   ```bash
-   npm install
-   ```
 
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
 ## Get a fresh project
 
