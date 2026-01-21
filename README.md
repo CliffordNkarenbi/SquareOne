@@ -14,5 +14,4 @@ SquareOne is a community-driven Christian mobile app designed to help believers 
 
 Join the SquareOne community.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- [Expo on GitHub](https://www.instagram.com/officialsqr1/)
