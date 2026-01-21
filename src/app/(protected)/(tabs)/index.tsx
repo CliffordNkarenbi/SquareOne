@@ -6,6 +6,7 @@ import { useTheme } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar';
 import { useMemo, useRef, useState } from 'react';
 import { FlatList, Pressable } from 'react-native';
+import 'react-native-reanimated';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function App() {

@@ -46,7 +46,7 @@ export function TabBar({ state, descriptors, navigation }: BottomTabBarProps) {
       position: 'absolute',
       height: 39,
       width: tabBarWidth,
-      bottom: 10,
+      bottom: 16,
       flexDirection: 'row',
       justifyContent: 'space-between',
       alignItems: 'center',
