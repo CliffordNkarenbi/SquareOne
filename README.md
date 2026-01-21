@@ -15,3 +15,4 @@ SquareOne is a community-driven Christian mobile app designed to help believers 
 Join the SquareOne community.
 
 - [Instagram](https://www.instagram.com/officialsqr1/)
+- [X](https://x.com/officialsqr1)
