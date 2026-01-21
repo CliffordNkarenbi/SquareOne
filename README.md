@@ -4,9 +4,9 @@ SquareOne is a community-driven Christian mobile app designed to help believers 
 
 ## Technologies
 
-*Expo
--day.js
-+react-native-svg
+* Expo
+- day.js
++ react-native-svg
 
 
 
