@@ -2,7 +2,7 @@ import HomeHeader from '@/components/HomeHeader';
 import PostListItem from '@/components/PostListItem';
 import { dummyPosts } from '@/dummyData';
 import { Feather } from '@expo/vector-icons';
-import { useTheme } from '@react-navigation/native';
+import { useTheme, useNavigation } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar';
 import { useMemo, useRef, useState } from 'react';
 import { FlatList, Pressable } from 'react-native';
@@ -11,6 +11,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function App() {
   const { colors } = useTheme();
+  const navigation = useNavigation();
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [searchQuery, setSearchQuery] = useState('');
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -49,6 +50,9 @@ export default function App() {
   
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: colors.background }} edges={['top']}>
+      <Pressable onPress={() => navigation.navigate('Login')} style={{ position: 'absolute', top: 40, right: 20, zIndex: 10 }}>
+        <Feather name="log-out" size={24} color={colors.text} />
+      </Pressable>
       <FlatList
         ref={flatListRef}
         data={filteredPosts}
