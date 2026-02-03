@@ -47,25 +47,23 @@ export default function LoginScreen() {
   };
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: '#2A332A' }}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: '#262B1C' }}>
       <ScrollView contentContainerStyle={{ flexGrow: 1 }} showsVerticalScrollIndicator={false}>
-        <View className="flex-1 px-6 justify-between py-8">
+        <View className="flex-1 px-12 justify-between ">
           {/* Header Section */}
-          <View className="items-center mt-12">
-            <Text className=" mb-2"><Authpagelogo width={90} height={90}  /></Text>
+          <View className="items-center mt-52 mb-0 pb-0">
+            <Text ><Authpagelogo width={124} height={124} /></Text>
           </View>
 
           {/* Form Section */}
-          <View className="space-y-6 flex-1 justify-center">
+          <View className="flex-1 justify-center pb-24">
             {/* Email Input */}
             <View>
               <TextInput
                 style={{
                   borderBottomColor: '#666',
                   borderBottomWidth: 1,
-                  paddingTop: 100,
                   paddingBottom:5,
-                  paddingHorizontal: 0,
                 }}
                 placeholder="Email address"
                 placeholderTextColor="#999"
@@ -78,13 +76,11 @@ export default function LoginScreen() {
             </View>
 
             {/* Password Input */}
-            <View>
-              <View style={{ flexDirection: 'row', alignItems: 'center', borderBottomColor: '#666', borderBottomWidth: 1, paddingBottom:5 }}>
+            <View className='mb-0 pb-0'>
+              <View style={{ flexDirection: 'row', alignItems: 'center', borderBottomColor: '#666', borderBottomWidth: 1, paddingBottom:5, paddingTop:60 }}>
                 <TextInput
                   style={{
                     flex: 1,
-                    paddingTop: 50,
-                    paddingHorizontal: 0,
                   }}
                   placeholder="Enter your password"
                   placeholderTextColor="#999"
@@ -99,7 +95,8 @@ export default function LoginScreen() {
                 </TouchableOpacity>
               </View>
             </View>
-            <View className="flex-row justify-between items-center mb-3">
+
+            <View className="flex-row justify-between items-center mb-3 mt-2 ">
                 <Link href="/(auth)/forgot-password" asChild>
                   <TouchableOpacity>
                     <Text className="text-gray-400 text-xs">Forgot Password</Text>
@@ -110,15 +107,15 @@ export default function LoginScreen() {
                     <Text className="text-gray-400 text-xs">Sign Up</Text>
                   </TouchableOpacity>
                 </Link>
-              </View>
+            </View>
                   
             <View className='flex-row justify-between items-center gap-1 pt-11'>      
                 {/* Sign In Button */}
                 <TouchableOpacity
                 onPress={handleSignIn}
                 disabled={loading}
-                className="bg-gray-800 py-4 rounded-lg active:opacity-70"
-                style={{ opacity: loading ? 0.6 : 1, width: '40%' }}
+                className="bg-[#1B1F14] py-4 rounded-2xl active:opacity-70"
+                style={{ opacity: loading ? 0.6 : 1, width: '45%', height: 56 }}
                 >
                 <Text className="text-white text-center font-semibold text-base">Sign In</Text>
                 </TouchableOpacity>
@@ -127,8 +124,8 @@ export default function LoginScreen() {
                 <TouchableOpacity
                 onPress={handleGoogleSignIn}
                 disabled={loading}
-                className="bg-gray-900 py-4 rounded-lg flex-row items-center justify-center active:opacity-70"
-                style={{ opacity: loading ? 0.6 : 1, width: '40%' }}
+                className="bg-[#1B1F14] py-4 rounded-2xl flex-row items-center justify-center active:opacity-70"
+                style={{ opacity: loading ? 0.6 : 1, width: '45%', height: 56 }}
                 >
                 <Ionicons name="logo-google" size={24} color="white" />
                 </TouchableOpacity>
