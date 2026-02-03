@@ -1,3 +1,4 @@
+import { supabase } from '@/lib/supabase';
 import { useAppTheme } from '@/theme';
 import { useRouter } from 'expo-router';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
@@ -29,11 +30,11 @@ export default function Profile() {
 
             <TouchableOpacity
                 style={[styles.logoutButton, { backgroundColor: colors.card, borderColor: colors.border }]}
-                onPress={() => router.replace('/(auth)/login')}
+                onPress={() => supabase.auth.signOut()}
                 activeOpacity={0.7}
             >
                 <Text style={[styles.logoutButtonText, { color: colors.text }]}>
-                    Go to Login
+                    Sign Out
                 </Text>
             </TouchableOpacity>
         </SafeAreaView>

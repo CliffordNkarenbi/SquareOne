@@ -8,6 +8,7 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import "../../global.css";
 
 import { ThemeProvider } from '@react-navigation/native';
+import { AuthProvider } from './providers/AuthProvider';
 
 
 export default function RootLayout() {
@@ -16,7 +17,9 @@ export default function RootLayout() {
   return (
     <SafeAreaProvider>
       <ThemeProvider value={colorScheme === 'dark' ? AppDarkTheme : AppLightTheme}>
-        <Slot />
+        <AuthProvider>
+          <Slot />
+        </AuthProvider>
       </ThemeProvider>
     </SafeAreaProvider>
   );
